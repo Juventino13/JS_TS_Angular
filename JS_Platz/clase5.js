@@ -1,9 +1,10 @@
 var nombre = 'Sacha'
 
-function  imprimirNombreEnMayusculas() { 
+function  imprimirNombreEnMayusculas() {
+     
     nombre = nombre.toUpperCase() 
     console.log (nombre)
 
 }
 
-imprimirNombreEnMayusculas ( )
+imprimirNombreEnMayusculas ( nombre)

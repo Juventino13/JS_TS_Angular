@@ -1,0 +1,31 @@
+<html>
+    <head> 
+        <titlte>
+            Scope
+        </titlte>
+<body> 
+
+    <a href="/ejercicios/"> Go back </a>
+    <p> <em> Abre la consola </em></p>
+<script src= "https://unpkg.com/jquery@3.3.1/dist/jquery"
+    <script> 
+    //global scope
+    var message= 'Hello, TCS'
+        var $ = function(msj){
+            console.log ('Say:' + msj);
+        };
+    //Funcion scope
+    //Block Scope 
+    //Module Scope
+
+    function printNumbers(){
+        for(var i=0; i<10; i++){
+            setTimeout(function(){console.log(i)},100);
+        }
+    }
+    printNumbers();
+    </script> 
+
+</body>
+
+</html>
