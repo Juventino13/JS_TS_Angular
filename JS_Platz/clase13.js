@@ -31,16 +31,34 @@ if(persona.piloto){
 }
 }
 const MAYORIA_DE_EDAD=18
-
+/*
 function esMayorDeEdad(persona){
     return persona.edad >= MAYORIA_DE_EDAD
-}
+}*/
+/////////////////////////////////////////////
+//Se convierte
+/*const esMayorDeEdad=(persona)=>{
+    return persona.edad>= MAYORIA_DE_EDAD
+}*/ 
+/////////////////////////////////////////////
+// se reduce a una linea
+/////////const esMayorDeEdad=(persona)=>persona.edad>= MAYORIA_DE_EDAD
+/////////////////////////////////////////////
+//Desestructurar
+const esMayorDeEdad=({edad})=> edad >= MAYORIA_DE_EDAD
+
 
 function imprimirSiesMayorDeEdad(persona){
     if (esMayorDeEdad(persona)){
         console.log(`${persona.nombre} es mayor de edad`)
     } else {
         console.log (`${persona.nombre} es menor de edad`)
+    }
+}
+
+function permitirAcceso(persona){
+    if(!esMayorDeEdad(persona)){
+        console.log('No puede entrar')
     }
 }
 //animal
