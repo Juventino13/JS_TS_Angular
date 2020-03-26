@@ -1,3 +1,16 @@
+<input 
+type="next"
+class="form-control"
+(input)="onUpdateServerName($event)">
+<p>{{serverName}} </p>
+<button 
+class="btn btn-primary" 
+
+[disabled]="!allowNewServer"
+(click)="onCreateServer()"> Add Server </button>
+<!-- <p innerText ="allowNewServer">galletas</p>-->
+
+<p>{{serverCreationStatus}} </p>
 
 <app-server></app-server>
 <app-server></app-server>
