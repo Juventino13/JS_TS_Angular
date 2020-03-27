@@ -15,8 +15,15 @@ class="btn btn-primary"
 [disabled]="!allowNewServer"
 (click)="onCreateServer()"> Add Server </button>
 <!-- <p innerText ="allowNewServer">galletas</p>-->
+<!--<p>{{serverCreationStatus}} </p> -->
+<p *ngIf="serverCreated"; else noServer> Serve was created, server name is{{ServerName}} </p>
+<p="serverCreated"> No server was created!{{ServerName}} </p>
 
-<p>{{serverCreationStatus}} </p>
+
+<ng-template #noServer> 
+    <p>No server was created!</p>
+</ng-template>
+
 
 <app-server></app-server>
 <app-server></app-server>
