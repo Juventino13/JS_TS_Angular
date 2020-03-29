@@ -57,7 +57,7 @@ function imprimirSiesMayorDeEdad(persona){
 }
 
 function permitirAcceso(persona){
-    if(!esMayorDeEdad(persona)){
+    if(!esMayorDeEdad(persona)){cd 
         console.log('No puede entrar')
     }
 }
